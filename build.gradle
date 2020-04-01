@@ -21,9 +21,9 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.eclipse.jetty:jetty-client:9.4.27.v20200227'
-    implementation 'org.eclipse.jetty.http2:http2-client:9.4.27.v20200227'
-    runtimeOnly 'org.eclipse.jetty:jetty-alpn-java-client:9.4.27.v20200227'
+    implementation 'org.eclipse.jetty:jetty-client:9.4.1.v20170120'
+    implementation 'org.eclipse.jetty.http2:http2-client:9.4.1.v20170120'
+    runtimeOnly 'org.eclipse.jetty:jetty-alpn-java-client:9.4.1.v20180619'
 
     // This dependency is used by the application.
     implementation 'com.google.guava:guava:28.2-jre'

@@ -24,7 +24,7 @@ public class App {
     }
 
     public static void doWithHttpClient() throws Exception {
-        var sc = new SslContextFactory.Client();
+        var sc = new SslContextFactory();
         var hc = new HttpClient(sc);
         hc.setFollowRedirects(false);
         hc.start();
@@ -41,7 +41,7 @@ public class App {
         var startTime = System.nanoTime();
 
         var client = new HTTP2Client();
-        var sc = new SslContextFactory.Client();
+        var sc = new SslContextFactory();
         client.addBean(sc);
         client.start();
 
